@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xie's Store - Contact</title>
+    <style>
+            header{
+                  padding: 50px;
+                  text-align:center;
+                  font-family:'Dancing Script';
+                  color: rgb(147, 10, 160);
+                  font-size: 30px;
+                  margin : 0px;
+                  background-image: url('images/flower-header.jpg');
+                  background-size: auto;
+                  background-repeat: no-repeat;
+                  background-size: 2000px 400px;
+              }
+              h2{
+                  padding:  10px 50px 30px 40px;
+                  vertical-align: super;
+                  margin-top: 0;
+                  color:  rgb(70, 11, 67);
+                  text-align: center;
+                  background-image: url('images/flower-header2.jpg');
+                  vertical-align: middle;
+              }
+              div{
+                
+                  background-color: pink;
+              }
+              p2{
+                font-family: fantasy;
+                color: red;
+                font-size: 50px;
+                font-weight: bolder;
+              }
+              ul{
+                  padding: 10px;
+                  display: flex;
+                  margin: 0em;
+                  justify-content:space-evenly;
+                  background-color: pink;
+              }
+              li{
+                  list-style: none;
+              }
+              footer{
+                  padding:.3em;
+                  text-align: center;
+                  font-family: fantasy ;
+                  color: white;
+                  background-color: pink;
+
+              }
+              a{
+                  font-family: fantasy;
+                  font-size: 25px;
+                  color: white;
+              }
+             form{  
+                      display:grid; 
+                      margin:auto; 
+                      width:2000px;  
+                      grid-template-columns: 0.3fr 1fr; 
+                      grid-gap: 100px;
+                      font-size:15px;
+                      font-family: fantasy;
+                    }
+            
+ </style>
+   <link rel="shortcut icon"type="image/x-icon" href="images/logo.ico"media="screen" />
+  </head>
+  <body>
+  <header>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+         
+    <h1>You support us today, better life you will get tomorrow</h1>
+</div>
+</header>
+<div>
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="snacks & drink.html">Snacks & drink</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="honesty.html">Honesty</a></li>
+</ul>
+</div>
+<h2>Any Question? Contact us!</h2>
+<div>
+    <p>
+        If you have any questions, contact us! Or you have any feed back,contact us!
+        </p>
+        <p1>
+            You will have chance to win a</p1><p2> $100 </p2><p3>giftcard!
+        </p3>
+</div>
+
+<body>
+    <form id="form" action="https://httpbin.org/post" method="POST" >
+        <fieldset class="data">
+            <legend class="data">Contact Form</legend>
+            
+           First name: <br>
+           <input name="username" placeholder="First name goes here" required/> <br />
+           Last name: <br>
+           <input name="username" placeholder="Last name goes here" required/> <br />
+           Email:<br>
+            <input type="Email" placeholder="email address goes here" required/> <br />
+           Address:<br>
+           <input type="name" placeholder="address goes here" required/> <br />
+           City:<br>
+           <input list="City-choice" id="City" name="City" required/><br  />
+           <datalist id="City-choice">
+            <option value="Toronto">
+            <option value="Vancouver">
+            <option value="Ottawa">
+            <option value="Victoria">
+            <option value="Winnipeg">
+            <option value="St. John's">
+            <option value="Hlifax">
+            <option value="Charlottetown">
+            <option value="Quebec City">
+            <option value="Yellowknife">
+            <option value="Iqaluit">
+            <option value="Whitehorse">                  
+            <option value="Regina">      
+           </datalist>
+           Phone Number: <br>
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7890"
+                   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                   required/> <br />
+           Postal Code: <br>
+           <input type="text" id="postalcode" name="postcode" placeholder="A0A 0A0"
+                  pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]"
+                  required/><br />
+            Would you like to be phoned?<br>
+            <fieldset>
+                <input type="checkbox" id="yes" name="yes" value="yes" checked/>
+                <label for="yes">Yes, please!</label><br>
+                <input type="checkbox" id="no" name="no" value="no">
+                <label for="no">No, thanks, maybe next time!</label><br> 
+            </fieldset>
+           Questions or Comments?<br>
+           <div id="box">
+               <fieldset>
+                <input type="radio" name="QandC" id="QandC-1" value="questions" checked />questions<br>
+                <input type="text" id="question"/><br>
+                <input type="radio" name="QandC" id="QandC-2" value="comments" />comments<br>
+                <input type="textarea" id="comments"/><br>
+                <input type="radio" name="QandC" id="QandC-3" value="ordernumber" />ordernumber<br>
+                <input type="textarea" id="ordernumber" /><br>
+                </fieldset>
+           </div>
+            <br>
+            <input type="submit" value="Submit"><input type="reset" value="Cancel">
+        </fieldset>
+    </form>  
+    <script src="script.js"></script>
+</body>
+
+
+
+<footer>Website made by &copy; Sirui Xie</footer>
+</body>
+</html>
